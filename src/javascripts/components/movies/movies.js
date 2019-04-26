@@ -22,6 +22,8 @@ const domStringBuilder = () => {
     domString += '</div>';
     domString += '</div>';
   });
+  domString += '  <div id="back">';
+  domString += '  </div>';
   domString += '</div>';
   domString += '</div>';
   util.printToDom('movies', domString);
