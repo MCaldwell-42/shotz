@@ -29,7 +29,6 @@ const shootTimeClass = (shootTime) => {
 
 const domStringBuilder = (locArray) => {
   let domString = '';
-  // domString += '<div class = "container">';
   domString += '<div class = "d-flex row">';
   locArray.forEach((location) => {
     domString += `<div id = ${location.id} class="card location col-2">`;
@@ -41,7 +40,6 @@ const domStringBuilder = (locArray) => {
     domString += '</div>';
   });
   domString += '</div>';
-  // domString += '</div>';
   util.printToDom('locations', domString);
 };
 
@@ -95,15 +93,4 @@ const initializeLocations = () => {
     .catch(err => console.error(err));
 };
 
-// function checkDark(shootTime) {
-//   return shootTime === 'After Dark';
-// }
-
-
-const afterDark = () => {
-  let Dark = [];
-  Dark = locations.filter(location => location.shootTime === 'After Dark');
-  domStringBuilder(Dark);
-};
-
-export default { initializeLocations, afterDark, filterButtonEvent };
+export default { initializeLocations, filterButtonEvent };
