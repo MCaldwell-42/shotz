@@ -3,6 +3,8 @@
 ## Description
 A website to keep track of movies and their shooting locations.
 ## Screenshots
+![image of shotz](https://raw.githubusercontent.com/MCaldwell-42/shotz/master/Screen%20Shot%202019-06-15%20at%2010.36.31%20AM.png)
+
 ## installation instructions
 * clone down this repo
 * at the root of the project run `npm install`
